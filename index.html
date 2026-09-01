@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="投資・株・FXを初心者にもわかりやすく解説するガイド。株の基本、FX、NISA、お金の知識をやさしく学べます。">
+<meta name="theme-color" content="#eef7ff">
+<title>投資・株・FX 初心者ガイド｜お金をもっとわかりやすく</title>
+<style>
+:root{--ink:#23324a;--muted:#64748b;--blue:#62aee8;--blue2:#eaf6ff;--pink:#f29ab5;--pink2:#fff0f5;--line:#e5edf5;--white:#fff;--shadow:0 14px 35px rgba(47,92,130,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f8fcff 0,#fff 35%);line-height:1.8}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#72b9ef,#f4a4bd);display:grid;place-items:center;color:#fff;font-size:22px;box-shadow:0 8px 18px rgba(98,174,232,.25)}nav{display:flex;gap:22px;font-size:14px;font-weight:700}nav a:hover{color:#4d9bd8}.menu{display:none;border:0;background:none;font-size:25px}
+.hero{max-width:1100px;margin:0 auto;padding:76px 20px 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}.eyebrow{display:inline-block;background:var(--pink2);color:#d66b8c;border-radius:999px;padding:5px 13px;font-size:13px;font-weight:800}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.25;margin:15px 0}.hero h1 span{color:#4d9bd8}.lead{color:var(--muted);font-size:17px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;font-weight:800;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)}.btn.pink{background:var(--pink);color:#fff;border-color:var(--pink)}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#eaf6ff;right:-55px;top:-55px}.chart{height:210px;position:relative;margin-top:12px}.chart svg{width:100%;height:100%}.mini{display:flex;justify-content:space-between;gap:12px}.mini div{background:#f8fbfe;border-radius:16px;padding:10px 13px;flex:1;font-size:12px}.mini b{display:block;font-size:18px}
+section{max-width:1100px;margin:auto;padding:55px 20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-head h2{margin:0;font-size:30px}.section-head p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 8px 24px rgba(47,92,130,.06);transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.icon{width:52px;height:52px;border-radius:17px;display:grid;place-items:center;font-size:26px;background:var(--blue2);margin-bottom:12px}.pinkbg{background:var(--pink2)}.card h3{margin:5px 0 5px}.card p{margin:0;color:var(--muted);font-size:14px}
+.cta{background:linear-gradient(135deg,#eaf6ff,#fff0f5);border:1px solid var(--line);border-radius:28px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta h2{margin:0 0 6px}.cta p{margin:0;color:var(--muted)}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.post{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.tag{font-size:12px;color:#4d9bd8;font-weight:800}.post h3{font-size:17px;margin:7px 0}.post p{font-size:13px;color:var(--muted);margin:0}
+.note-area{display:grid;grid-template-columns:1fr 1fr;gap:18px}.external{border-radius:22px;padding:25px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}.external .mark{font-weight:900;font-size:24px;margin-bottom:5px}.ameba{border-top:5px solid #e83e8c}.note{border-top:5px solid #222}
+.disclaimer{font-size:12px;color:#7b8797;background:#f7fafc;border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:22px}
+footer{margin-top:30px;background:#f7fbff;border-top:1px solid var(--line);padding:35px 20px;color:var(--muted);font-size:13px}.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:48px}.hero-card{order:-1}.grid,.posts{grid-template-columns:1fr}.note-area{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:5px}.cta{display:block}.cta .buttons{margin-top:18px}.nav{padding:10px 15px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#"><span class="logo">📈</span><span>投資・株・FX<br><small>初心者ガイド</small></span></a>
+<nav><a href="#learn">学ぶ</a><a href="#articles">記事</a><a href="#links">ブログ・note</a><a href="#qa">Q&A</a></nav>
+<button class="menu" aria-label="メニュー">☰</button>
+</div></header>
+
+<main>
+<section class="hero">
+<div>
+<span class="eyebrow">BEGINNER FRIENDLY</span>
+<h1>投資・株・FXを<br><span>もっとわかりやすく。</span></h1>
+<p class="lead">「株って何？」「FXはどう始める？」そんな初心者の疑問を、むずかしい言葉をできるだけ使わずに解説します。</p>
+<div class="buttons"><a class="btn primary" href="#learn">📚 基礎から学ぶ</a><a class="btn pink" href="#links">📝 最新記事を見る</a></div>
+</div>
+<div class="hero-card" aria-label="オリジナルチャートロゴ">
+<strong>Money × Knowledge</strong>
+<div class="chart"><svg viewBox="0 0 500 220" preserveAspectRatio="none"><path d="M0 185 C55 170,65 150,105 160 S155 125,195 145 S245 80,280 115 S330 90,365 105 S425 35,500 55" fill="none" stroke="#62aee8" stroke-width="7" stroke-linecap="round"/><path d="M0 205 H500" stroke="#dfeaf3" stroke-width="2"/></svg></div>
+<div class="mini"><div>株式<span>📈</span><b>Stock</b></div><div>FX<span>💱</span><b>Forex</b></div><div>投資<span>💰</span><b>Assets</b></div></div>
+</div>
+</section>
+
+<section id="learn">
+<div class="section-head"><div><h2>まずはここから</h2><p>初心者向けに、基本をひとつずつ。</p></div></div>
+<div class="grid">
+<a class="card" href="#articles"><div class="icon">📈</div><h3>株を学ぶ</h3><p>株とは？株価・配当・PERなど、まず知っておきたい基礎を解説。</p></a>
+<a class="card" href="#articles"><div class="icon pinkbg">💱</div><h3>FXを学ぶ</h3><p>為替、レバレッジ、ロスカットなど、FXの基本とリスクを整理。</p></a>
+<a class="card" href="#articles"><div class="icon">💰</div><h3>投資・NISA</h3><p>長期・分散・積立など、資産形成を考えるための基本を紹介。</p></a>
+<a class="card" href="#qa"><div class="icon pinkbg">❓</div><h3>初心者Q&A</h3><p>「いくらから？」「何を勉強する？」など、よくある疑問に回答。</p></a>
+<a class="card" href="#articles"><div class="icon">📖</div><h3>用語集</h3><p>難しい投資用語を、できるだけシンプルな言葉でまとめます。</p></a>
+<a class="card" href="#links"><div class="icon pinkbg">📝</div><h3>運用・学習記録</h3><p>ブログやnoteで、日々の学びや考え方を発信しています。</p></a>
+</div>
+</section>
+
+<section id="articles">
+<div class="section-head"><div><h2>初心者向け記事</h2><p>検索で見つけてもらえる「悩み解決型」の記事を増やしていきます。</p></div></div>
+<div class="posts">
+<article class="post"><span class="tag">株｜初心者</span><h3>今さら聞けない「株」とは？</h3><p>株式の意味、株価、配当など、最初に知っておきたいこと。</p></article>
+<article class="post"><span class="tag">FX｜初心者</span><h3>FXって何？株との違いをやさしく解説</h3><p>利益の仕組みやリスクを、初心者目線で整理します。</p></article>
+<article class="post"><span class="tag">投資｜基礎</span><h3>投資初心者が最初に勉強したいこと</h3><p>長期・分散・リスク管理など、土台になる考え方。</p></article>
+</div>
+</section>
+
+<section id="qa">
+<div class="cta"><div><h2>「これってどういう意味？」</h2><p>投資・株・FXについて、初心者が迷いやすいポイントを整理。</p></div><a class="btn primary" href="#links">解説記事を見る →</a></div>
+<div class="disclaimer">⚠️ このサイトは投資・金融に関する一般的な情報提供を目的としています。特定の金融商品の売買を推奨したり、個別の投資判断を行うものではありません。投資には損失が生じる可能性があります。最新の制度・商品情報は必ず公式情報をご確認ください。</div>
+</section>
+
+<section id="links">
+<div class="section-head"><div><h2>もっと詳しく読む</h2><p>日々の発信と、深掘り記事はこちら。</p></div></div>
+<div class="note-area">
+<a class="external ameba" href="https://ameblo.jp/okanenokurashi/" target="_blank" rel="noopener"><div class="mark">Amebaブログ 🌸</div><p>お金・投資についての日々の発信を読む →</p></a>
+<a class="external note" href="https://note.com/saving_100" target="_blank" rel="noopener"><div class="mark">note ✏️</div><p>もう少し詳しく読みたい人はこちら →</p></a>
+</div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><span>© 2026 投資・株・FX 初心者ガイド</span><span>株・投資・FXを、やさしく。</span></div></footer>
+</body>
+</html>
