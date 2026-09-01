@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maneyguide-jp.github.io/investment-guide/sitemap.xml
